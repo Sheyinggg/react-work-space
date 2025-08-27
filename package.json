@@ -1,0 +1,44 @@
+{
+  "name": "react-work-space",
+  "version": "1.0.0",
+  "description": "React projects workspace",
+  "author": "Mr.SheYing",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write packages/ apps/",
+    "format:check": "prettier --check packages/ apps/",
+    "format:fix": "prettier --write --ignore-unknown packages/ apps/",
+    "lint": "eslint packages/ apps/ --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint packages/ apps/ --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:check": "eslint packages/ apps/ --ext .js,.jsx,.ts,.tsx --max-warnings 0"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.1.0",
+    "typescript": "~5.9.2"
+  },
+  "keywords": [
+    "react",
+    "monorepo",
+    "workspace",
+    "typescript",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/react-work-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/react-work-space/issues"
+  },
+  "homepage": "https://github.com/your-username/react-work-space#readme"
+}
